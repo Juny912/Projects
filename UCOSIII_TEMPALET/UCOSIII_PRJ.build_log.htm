@@ -1,0 +1,424 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.23.0.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: stm32 Administrator, stm32, LIC=SDA0P-MVIRR-PCKJ8-3QEP0-I8FHP-IUFZ6
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.23
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.23
+Dialog DLL:      DARMSTM.DLL V1.68.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.23.0
+Dialog DLL:      TARMSTM.DLL V1.66.0.0
+ 
+<h2>Project:</h2>
+F:\ST\STM32\UCOSIII_TEMPALET\USER\UCOSIII_PRJ.uvprojx
+Project File Date:  01/24/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+compiling main.c...
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(261): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_DeInit(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(262): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_Init(ADC_TypeDef* ADCx, ADC_InitTypeDef* ADC_InitStruct);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(264): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_Cmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(265): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_DMACmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(266): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_ITConfig(ADC_TypeDef* ADCx, u16 ADC_IT, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(267): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_ResetCalibration(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(268): error:  #20: identifier "ADC_TypeDef" is undefined
+  FlagStatus ADC_GetResetCalibrationStatus(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(269): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_StartCalibration(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(270): error:  #20: identifier "ADC_TypeDef" is undefined
+  FlagStatus ADC_GetCalibrationStatus(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(271): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_SoftwareStartConvCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(272): error:  #20: identifier "ADC_TypeDef" is undefined
+  FlagStatus ADC_GetSoftwareStartConvStatus(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(273): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_DiscModeChannelCountConfig(ADC_TypeDef* ADCx, u8 Number);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(274): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_DiscModeCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(275): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_RegularChannelConfig(ADC_TypeDef* ADCx, u8 ADC_Channel, u8 Rank, u8 ADC_SampleTime);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(276): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_ExternalTrigConvCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(277): error:  #20: identifier "ADC_TypeDef" is undefined
+  u16 ADC_GetConversionValue(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(279): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_AutoInjectedConvCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(280): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_InjectedDiscModeCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(281): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_ExternalTrigInjectedConvConfig(ADC_TypeDef* ADCx, u32 ADC_ExternalTrigInjecConv);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(282): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_ExternalTrigInjectedConvCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(283): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_SoftwareStartInjectedConvCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(284): error:  #20: identifier "ADC_TypeDef" is undefined
+  FlagStatus ADC_GetSoftwareStartInjectedConvCmdStatus(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(285): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_InjectedChannelConfig(ADC_TypeDef* ADCx, u8 ADC_Channel, u8 Rank, u8 ADC_SampleTime);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(286): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_InjectedSequencerLengthConfig(ADC_TypeDef* ADCx, u8 Length);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(287): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_SetInjectedOffset(ADC_TypeDef* ADCx, u8 ADC_InjectedChannel, u16 Offset);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(288): error:  #20: identifier "ADC_TypeDef" is undefined
+  u16 ADC_GetInjectedConversionValue(ADC_TypeDef* ADCx, u8 ADC_InjectedChannel);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(289): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_AnalogWatchdogCmd(ADC_TypeDef* ADCx, u32 ADC_AnalogWatchdog);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(290): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_AnalogWatchdogThresholdsConfig(ADC_TypeDef* ADCx, u16 HighThreshold, u16 LowThreshold);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(291): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_AnalogWatchdogSingleChannelConfig(ADC_TypeDef* ADCx, u8 ADC_Channel);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(293): error:  #20: identifier "ADC_TypeDef" is undefined
+  FlagStatus ADC_GetFlagStatus(ADC_TypeDef* ADCx, u8 ADC_FLAG);
+main.c: 0 warnings, 30 errors
+compiling system_stm32f10x.c...
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(261): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_DeInit(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(262): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_Init(ADC_TypeDef* ADCx, ADC_InitTypeDef* ADC_InitStruct);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(264): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_Cmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(265): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_DMACmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(266): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_ITConfig(ADC_TypeDef* ADCx, u16 ADC_IT, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(267): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_ResetCalibration(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(268): error:  #20: identifier "ADC_TypeDef" is undefined
+  FlagStatus ADC_GetResetCalibrationStatus(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(269): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_StartCalibration(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(270): error:  #20: identifier "ADC_TypeDef" is undefined
+  FlagStatus ADC_GetCalibrationStatus(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(271): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_SoftwareStartConvCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(272): error:  #20: identifier "ADC_TypeDef" is undefined
+  FlagStatus ADC_GetSoftwareStartConvStatus(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(273): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_DiscModeChannelCountConfig(ADC_TypeDef* ADCx, u8 Number);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(274): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_DiscModeCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(275): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_RegularChannelConfig(ADC_TypeDef* ADCx, u8 ADC_Channel, u8 Rank, u8 ADC_SampleTime);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(276): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_ExternalTrigConvCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(277): error:  #20: identifier "ADC_TypeDef" is undefined
+  u16 ADC_GetConversionValue(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(279): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_AutoInjectedConvCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(280): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_InjectedDiscModeCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(281): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_ExternalTrigInjectedConvConfig(ADC_TypeDef* ADCx, u32 ADC_ExternalTrigInjecConv);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(282): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_ExternalTrigInjectedConvCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(283): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_SoftwareStartInjectedConvCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(284): error:  #20: identifier "ADC_TypeDef" is undefined
+  FlagStatus ADC_GetSoftwareStartInjectedConvCmdStatus(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(285): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_InjectedChannelConfig(ADC_TypeDef* ADCx, u8 ADC_Channel, u8 Rank, u8 ADC_SampleTime);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(286): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_InjectedSequencerLengthConfig(ADC_TypeDef* ADCx, u8 Length);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(287): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_SetInjectedOffset(ADC_TypeDef* ADCx, u8 ADC_InjectedChannel, u16 Offset);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(288): error:  #20: identifier "ADC_TypeDef" is undefined
+  u16 ADC_GetInjectedConversionValue(ADC_TypeDef* ADCx, u8 ADC_InjectedChannel);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(289): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_AnalogWatchdogCmd(ADC_TypeDef* ADCx, u32 ADC_AnalogWatchdog);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(290): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_AnalogWatchdogThresholdsConfig(ADC_TypeDef* ADCx, u16 HighThreshold, u16 LowThreshold);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(291): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_AnalogWatchdogSingleChannelConfig(ADC_TypeDef* ADCx, u8 ADC_Channel);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(293): error:  #20: identifier "ADC_TypeDef" is undefined
+  FlagStatus ADC_GetFlagStatus(ADC_TypeDef* ADCx, u8 ADC_FLAG);
+system_stm32f10x.c: 0 warnings, 30 errors
+compiling stm32f10x_it.c...
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(261): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_DeInit(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(262): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_Init(ADC_TypeDef* ADCx, ADC_InitTypeDef* ADC_InitStruct);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(264): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_Cmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(265): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_DMACmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(266): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_ITConfig(ADC_TypeDef* ADCx, u16 ADC_IT, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(267): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_ResetCalibration(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(268): error:  #20: identifier "ADC_TypeDef" is undefined
+  FlagStatus ADC_GetResetCalibrationStatus(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(269): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_StartCalibration(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(270): error:  #20: identifier "ADC_TypeDef" is undefined
+  FlagStatus ADC_GetCalibrationStatus(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(271): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_SoftwareStartConvCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(272): error:  #20: identifier "ADC_TypeDef" is undefined
+  FlagStatus ADC_GetSoftwareStartConvStatus(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(273): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_DiscModeChannelCountConfig(ADC_TypeDef* ADCx, u8 Number);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(274): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_DiscModeCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(275): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_RegularChannelConfig(ADC_TypeDef* ADCx, u8 ADC_Channel, u8 Rank, u8 ADC_SampleTime);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(276): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_ExternalTrigConvCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(277): error:  #20: identifier "ADC_TypeDef" is undefined
+  u16 ADC_GetConversionValue(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(279): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_AutoInjectedConvCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(280): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_InjectedDiscModeCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(281): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_ExternalTrigInjectedConvConfig(ADC_TypeDef* ADCx, u32 ADC_ExternalTrigInjecConv);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(282): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_ExternalTrigInjectedConvCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(283): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_SoftwareStartInjectedConvCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(284): error:  #20: identifier "ADC_TypeDef" is undefined
+  FlagStatus ADC_GetSoftwareStartInjectedConvCmdStatus(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(285): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_InjectedChannelConfig(ADC_TypeDef* ADCx, u8 ADC_Channel, u8 Rank, u8 ADC_SampleTime);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(286): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_InjectedSequencerLengthConfig(ADC_TypeDef* ADCx, u8 Length);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(287): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_SetInjectedOffset(ADC_TypeDef* ADCx, u8 ADC_InjectedChannel, u16 Offset);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(288): error:  #20: identifier "ADC_TypeDef" is undefined
+  u16 ADC_GetInjectedConversionValue(ADC_TypeDef* ADCx, u8 ADC_InjectedChannel);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(289): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_AnalogWatchdogCmd(ADC_TypeDef* ADCx, u32 ADC_AnalogWatchdog);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(290): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_AnalogWatchdogThresholdsConfig(ADC_TypeDef* ADCx, u16 HighThreshold, u16 LowThreshold);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(291): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_AnalogWatchdogSingleChannelConfig(ADC_TypeDef* ADCx, u8 ADC_Channel);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(293): error:  #20: identifier "ADC_TypeDef" is undefined
+  FlagStatus ADC_GetFlagStatus(ADC_TypeDef* ADCx, u8 ADC_FLAG);
+stm32f10x_it.c: 0 warnings, 30 errors
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+"no source": Error:  #5: cannot open source input file "..\STM32F10x_FWKLib\src\misc.c": No such file or directory
+..\STM32F10x_FWKLib\src\misc.c: 0 warnings, 1 error
+compiling core_cm3.c...
+compiling stm32f10x_adc.c...
+..\STM32F10x_FWKLib\inc\stm32f10x_can.h(250): error:  #20: identifier "CAN_TypeDef" is undefined
+  void CAN_DeInit(CAN_TypeDef* CANx);
+..\STM32F10x_FWKLib\inc\stm32f10x_can.h(251): error:  #20: identifier "CAN_TypeDef" is undefined
+  u8 CAN_Init(CAN_TypeDef* CANx, CAN_InitTypeDef* CAN_InitStruct);
+..\STM32F10x_FWKLib\inc\stm32f10x_can.h(255): error:  #20: identifier "CAN_TypeDef" is undefined
+  void CAN_DBGFreeze(CAN_TypeDef* CANx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_can.h(256): error:  #20: identifier "CAN_TypeDef" is undefined
+  void CAN_ITConfig(CAN_TypeDef* CANx, u32 CAN_IT, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_can.h(257): error:  #20: identifier "CAN_TypeDef" is undefined
+  u8 CAN_Transmit(CAN_TypeDef* CANx, CanTxMsg* TxMessage);
+..\STM32F10x_FWKLib\inc\stm32f10x_can.h(258): error:  #20: identifier "CAN_TypeDef" is undefined
+  u8 CAN_TransmitStatus(CAN_TypeDef* CANx, u8 TransmitMailbox);
+..\STM32F10x_FWKLib\inc\stm32f10x_can.h(259): error:  #20: identifier "CAN_TypeDef" is undefined
+  void CAN_CancelTransmit(CAN_TypeDef* CANx, u8 Mailbox);
+..\STM32F10x_FWKLib\inc\stm32f10x_can.h(260): error:  #20: identifier "CAN_TypeDef" is undefined
+  void CAN_FIFORelease(CAN_TypeDef* CANx, u8 FIFONumber);
+..\STM32F10x_FWKLib\inc\stm32f10x_can.h(261): error:  #20: identifier "CAN_TypeDef" is undefined
+  u8 CAN_MessagePending(CAN_TypeDef* CANx, u8 FIFONumber);
+..\STM32F10x_FWKLib\inc\stm32f10x_can.h(262): error:  #20: identifier "CAN_TypeDef" is undefined
+  void CAN_Receive(CAN_TypeDef* CANx, u8 FIFONumber, CanRxMsg* RxMessage);
+..\STM32F10x_FWKLib\inc\stm32f10x_can.h(263): error:  #20: identifier "CAN_TypeDef" is undefined
+  u8 CAN_Sleep(CAN_TypeDef* CANx);
+..\STM32F10x_FWKLib\inc\stm32f10x_can.h(264): error:  #20: identifier "CAN_TypeDef" is undefined
+  u8 CAN_WakeUp(CAN_TypeDef* CANx);
+..\STM32F10x_FWKLib\inc\stm32f10x_can.h(265): error:  #20: identifier "CAN_TypeDef" is undefined
+  FlagStatus CAN_GetFlagStatus(CAN_TypeDef* CANx, u32 CAN_FLAG);
+..\STM32F10x_FWKLib\inc\stm32f10x_can.h(266): error:  #20: identifier "CAN_TypeDef" is undefined
+  void CAN_ClearFlag(CAN_TypeDef* CANx, u32 CAN_FLAG);
+..\STM32F10x_FWKLib\inc\stm32f10x_can.h(267): error:  #20: identifier "CAN_TypeDef" is undefined
+  ITStatus CAN_GetITStatus(CAN_TypeDef* CANx, u32 CAN_IT);
+..\STM32F10x_FWKLib\inc\stm32f10x_can.h(268): error:  #20: identifier "CAN_TypeDef" is undefined
+  void CAN_ClearITPendingBit(CAN_TypeDef* CANx, u32 CAN_IT);
+..\STM32F10x_FWKLib\inc\stm32f10x_dma.h(284): error:  #20: identifier "DMA_Channel_TypeDef" is undefined
+  void DMA_DeInit(DMA_Channel_TypeDef* DMAy_Channelx);
+..\STM32F10x_FWKLib\inc\stm32f10x_dma.h(285): error:  #20: identifier "DMA_Channel_TypeDef" is undefined
+  void DMA_Init(DMA_Channel_TypeDef* DMAy_Channelx, DMA_InitTypeDef* DMA_InitStruct);
+..\STM32F10x_FWKLib\inc\stm32f10x_dma.h(287): error:  #20: identifier "DMA_Channel_TypeDef" is undefined
+  void DMA_Cmd(DMA_Channel_TypeDef* DMAy_Channelx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_dma.h(288): error:  #20: identifier "DMA_Channel_TypeDef" is undefined
+  void DMA_ITConfig(DMA_Channel_TypeDef* DMAy_Channelx, u32 DMA_IT, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_dma.h(289): error:  #20: identifier "DMA_Channel_TypeDef" is undefined
+  u16 DMA_GetCurrDataCounter(DMA_Channel_TypeDef* DMAy_Channelx);
+..\STM32F10x_FWKLib\inc\stm32f10x_gpio.h(231): error:  #20: identifier "GPIO_TypeDef" is undefined
+  void GPIO_DeInit(GPIO_TypeDef* GPIOx);
+..\STM32F10x_FWKLib\inc\stm32f10x_gpio.h(233): error:  #20: identifier "GPIO_TypeDef" is undefined
+  void GPIO_Init(GPIO_TypeDef* GPIOx, GPIO_InitTypeDef* GPIO_InitStruct);
+..\STM32F10x_FWKLib\inc\stm32f10x_gpio.h(235): error:  #20: identifier "GPIO_TypeDef" is undefined
+  u8 GPIO_ReadInputDataBit(GPIO_TypeDef* GPIOx, u16 GPIO_Pin);
+..\STM32F10x_FWKLib\inc\stm32f10x_gpio.h(236): error:  #20: identifier "GPIO_TypeDef" is undefined
+  u16 GPIO_ReadInputData(GPIO_TypeDef* GPIOx);
+..\STM32F10x_FWKLib\inc\stm32f10x_gpio.h(237): error:  #20: identifier "GPIO_TypeDef" is undefined
+  u8 GPIO_ReadOutputDataBit(GPIO_TypeDef* GPIOx, u16 GPIO_Pin);
+..\STM32F10x_FWKLib\inc\stm32f10x_gpio.h(238): error:  #20: identifier "GPIO_TypeDef" is undefined
+  u16 GPIO_ReadOutputData(GPIO_TypeDef* GPIOx);
+..\STM32F10x_FWKLib\inc\stm32f10x_gpio.h(239): error:  #20: identifier "GPIO_TypeDef" is undefined
+  void GPIO_SetBits(GPIO_TypeDef* GPIOx, u16 GPIO_Pin);
+..\STM32F10x_FWKLib\inc\stm32f10x_gpio.h(240): error:  #20: identifier "GPIO_TypeDef" is undefined
+  void GPIO_ResetBits(GPIO_TypeDef* GPIOx, u16 GPIO_Pin);
+..\STM32F10x_FWKLib\inc\stm32f10x_gpio.h(241): error:  #20: identifier "GPIO_TypeDef" is undefined
+  void GPIO_WriteBit(GPIO_TypeDef* GPIOx, u16 GPIO_Pin, BitAction BitVal);
+..\STM32F10x_FWKLib\src\stm32f10x_adc.c: 0 warnings, 30 errors
+compiling stm32f10x_can.c...
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(261): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_DeInit(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(262): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_Init(ADC_TypeDef* ADCx, ADC_InitTypeDef* ADC_InitStruct);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(264): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_Cmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(265): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_DMACmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(266): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_ITConfig(ADC_TypeDef* ADCx, u16 ADC_IT, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(267): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_ResetCalibration(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(268): error:  #20: identifier "ADC_TypeDef" is undefined
+  FlagStatus ADC_GetResetCalibrationStatus(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(269): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_StartCalibration(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(270): error:  #20: identifier "ADC_TypeDef" is undefined
+  FlagStatus ADC_GetCalibrationStatus(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(271): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_SoftwareStartConvCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(272): error:  #20: identifier "ADC_TypeDef" is undefined
+  FlagStatus ADC_GetSoftwareStartConvStatus(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(273): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_DiscModeChannelCountConfig(ADC_TypeDef* ADCx, u8 Number);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(274): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_DiscModeCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(275): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_RegularChannelConfig(ADC_TypeDef* ADCx, u8 ADC_Channel, u8 Rank, u8 ADC_SampleTime);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(276): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_ExternalTrigConvCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(277): error:  #20: identifier "ADC_TypeDef" is undefined
+  u16 ADC_GetConversionValue(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(279): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_AutoInjectedConvCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(280): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_InjectedDiscModeCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(281): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_ExternalTrigInjectedConvConfig(ADC_TypeDef* ADCx, u32 ADC_ExternalTrigInjecConv);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(282): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_ExternalTrigInjectedConvCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(283): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_SoftwareStartInjectedConvCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(284): error:  #20: identifier "ADC_TypeDef" is undefined
+  FlagStatus ADC_GetSoftwareStartInjectedConvCmdStatus(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(285): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_InjectedChannelConfig(ADC_TypeDef* ADCx, u8 ADC_Channel, u8 Rank, u8 ADC_SampleTime);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(286): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_InjectedSequencerLengthConfig(ADC_TypeDef* ADCx, u8 Length);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(287): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_SetInjectedOffset(ADC_TypeDef* ADCx, u8 ADC_InjectedChannel, u16 Offset);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(288): error:  #20: identifier "ADC_TypeDef" is undefined
+  u16 ADC_GetInjectedConversionValue(ADC_TypeDef* ADCx, u8 ADC_InjectedChannel);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(289): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_AnalogWatchdogCmd(ADC_TypeDef* ADCx, u32 ADC_AnalogWatchdog);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(290): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_AnalogWatchdogThresholdsConfig(ADC_TypeDef* ADCx, u16 HighThreshold, u16 LowThreshold);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(291): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_AnalogWatchdogSingleChannelConfig(ADC_TypeDef* ADCx, u8 ADC_Channel);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(293): error:  #20: identifier "ADC_TypeDef" is undefined
+  FlagStatus ADC_GetFlagStatus(ADC_TypeDef* ADCx, u8 ADC_FLAG);
+..\STM32F10x_FWKLib\src\stm32f10x_can.c: 0 warnings, 30 errors
+compiling stm32f10x_bkp.c...
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(261): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_DeInit(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(262): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_Init(ADC_TypeDef* ADCx, ADC_InitTypeDef* ADC_InitStruct);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(264): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_Cmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(265): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_DMACmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(266): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_ITConfig(ADC_TypeDef* ADCx, u16 ADC_IT, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(267): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_ResetCalibration(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(268): error:  #20: identifier "ADC_TypeDef" is undefined
+  FlagStatus ADC_GetResetCalibrationStatus(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(269): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_StartCalibration(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(270): error:  #20: identifier "ADC_TypeDef" is undefined
+  FlagStatus ADC_GetCalibrationStatus(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(271): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_SoftwareStartConvCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(272): error:  #20: identifier "ADC_TypeDef" is undefined
+  FlagStatus ADC_GetSoftwareStartConvStatus(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(273): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_DiscModeChannelCountConfig(ADC_TypeDef* ADCx, u8 Number);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(274): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_DiscModeCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(275): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_RegularChannelConfig(ADC_TypeDef* ADCx, u8 ADC_Channel, u8 Rank, u8 ADC_SampleTime);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(276): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_ExternalTrigConvCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(277): error:  #20: identifier "ADC_TypeDef" is undefined
+  u16 ADC_GetConversionValue(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(279): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_AutoInjectedConvCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(280): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_InjectedDiscModeCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(281): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_ExternalTrigInjectedConvConfig(ADC_TypeDef* ADCx, u32 ADC_ExternalTrigInjecConv);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(282): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_ExternalTrigInjectedConvCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(283): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_SoftwareStartInjectedConvCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(284): error:  #20: identifier "ADC_TypeDef" is undefined
+  FlagStatus ADC_GetSoftwareStartInjectedConvCmdStatus(ADC_TypeDef* ADCx);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(285): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_InjectedChannelConfig(ADC_TypeDef* ADCx, u8 ADC_Channel, u8 Rank, u8 ADC_SampleTime);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(286): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_InjectedSequencerLengthConfig(ADC_TypeDef* ADCx, u8 Length);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(287): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_SetInjectedOffset(ADC_TypeDef* ADCx, u8 ADC_InjectedChannel, u16 Offset);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(288): error:  #20: identifier "ADC_TypeDef" is undefined
+  u16 ADC_GetInjectedConversionValue(ADC_TypeDef* ADCx, u8 ADC_InjectedChannel);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(289): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_AnalogWatchdogCmd(ADC_TypeDef* ADCx, u32 ADC_AnalogWatchdog);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(290): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_AnalogWatchdogThresholdsConfig(ADC_TypeDef* ADCx, u16 HighThreshold, u16 LowThreshold);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(291): error:  #20: identifier "ADC_TypeDef" is undefined
+  void ADC_AnalogWatchdogSingleChannelConfig(ADC_TypeDef* ADCx, u8 ADC_Channel);
+..\STM32F10x_FWKLib\inc\stm32f10x_adc.h(293): error:  #20: identifier "ADC_TypeDef" is undefined
+  FlagStatus ADC_GetFlagStatus(ADC_TypeDef* ADCx, u8 ADC_FLAG);
+..\STM32F10x_FWKLib\src\stm32f10x_bkp.c: 0 warnings, 30 errors
+compiling stm32f10x_cec.c...
+"no source": Error:  #5: cannot open source input file "..\STM32F10x_FWKLib\src\stm32f10x_cec.c": No such file or directory
+..\STM32F10x_FWKLib\src\stm32f10x_cec.c: 0 warnings, 1 error
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Project build/rebuild aborted.
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>

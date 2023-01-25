@@ -1,6 +1,0 @@
---c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\STM32F10x_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\Modules\Led -I ..\Modules\Keys -I ..\Modules\MyUsart -I ..\Modules\Exti -I ..\Modules\MyDMA
--I.\RTE\_Template
--IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include
--IC:\Keil_v5\ARM\CMSIS\Include
--D__UVISION_VERSION="523" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER
--o ..\obj\mydma.o --omf_browse ..\obj\mydma.crf --depend ..\obj\mydma.d "..\Modules\MyDMA\MyDMA.c"

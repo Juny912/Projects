@@ -27,17 +27,34 @@ void Led0_task(void *pvParameters);        //task主函数
 
 #define LED1_TASK_PRIO  3       //task优先级
 #define LED1_STK_SIZE   50     //task堆栈大小
+StackType_t Led1_Stack[LED1_STK_SIZE];
+StaticTask_t Led1_TCB;
+
 TaskHandle_t Led1Task_Handler; //task句柄
 void Led1_task(void *pvParameters);        //task主函数
+
+#define QUERY_TASK_PRIO  3       //task优先级
+#define QUERY_STK_SIZE   256     //task堆栈大小
+StackType_t Query_Stack[LED1_STK_SIZE];
+StaticTask_t Query_TCB;
+
+TaskHandle_t QueryTask_Handler; //task句柄
+void Query_task(void *pvParameters);        //task主函数
+
+
 
 
 void Led0_task(void *pvParameters)
 {
+    u8 timecnt = 0;
     while(1)
     {
         LED0 = ~LED0;
         vTaskDelay(500);
+
     }
+    
+    
 
 }
 
@@ -52,8 +69,35 @@ void Led1_task(void *pvParameters)
     }
 
 }
+UBaseType_t taskPri = 0, taskNum = 0;
+eTaskState taskSts;
 
 
+void Query_task(void *pvParameters)
+{
+    u32 pulTotalRunTime;
+    
+    TaskStatus_t *pTaskStat;
+    TaskHandle_t taskHandle;
+    
+
+    while(1)
+    {
+        //printf("Get task info\n");
+        
+        taskPri = uxTaskPriorityGet(Led0Task_Handler);
+        taskNum = uxTaskGetNumberOfTasks();
+        
+        pTaskStat = pvPortMalloc(taskNum*sizeof(TaskStatus_t));
+        uxTaskGetSystemState(pTaskStat, taskNum, &pulTotalRunTime);
+
+        taskHandle = xTaskGetHandle("Led0_task");
+        taskHandle = xTaskGetIdleTaskHandle();
+        vTaskGetInfo(taskHandle, pTaskStat, pdFALSE, taskSts);
+        vTaskDelay(2000);
+    }
+
+}
 
 
 void start_task(void *pvParameters)
@@ -61,6 +105,7 @@ void start_task(void *pvParameters)
     taskENTER_CRITICAL();
     xTaskCreate((TaskFunction_t)Led0_task, "Led0_task", LED0_STK_SIZE, NULL, LED0_TASK_PRIO, &Led0Task_Handler);
     xTaskCreate((TaskFunction_t)Led1_task, "Led1_task", LED1_STK_SIZE, NULL, LED1_TASK_PRIO, &Led1Task_Handler);
+    xTaskCreate((TaskFunction_t)Query_task, "Query_task", QUERY_STK_SIZE, NULL, QUERY_TASK_PRIO, &QueryTask_Handler);
     
     vTaskDelete(StartTask_Handler);
     taskEXIT_CRITICAL();
